@@ -1,5 +1,5 @@
 {
-  "name": "senior_enrichment",
+  "name": "starfleet-academy",
   "version": "0.0.1",
   "description": "A review time project",
   "main": "index.js",
@@ -7,7 +7,8 @@
     "test": "mocha **/*.test.js *.test.js",
     "build": "webpack",
     "build-watch": "webpack -w",
-    "start": "nodemon server/start.js"
+    "start": "nodemon server/start.js",
+    "seed": "node seed.js"
   },
   "keywords": [
     "react",
