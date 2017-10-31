@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchStudents } from '../actions/studentActions';
 import store from '../store';
+import studentReducer from '../reducers/studentReducer';
 
 export default class AllStudents extends Component {
 

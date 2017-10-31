@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Navbar from './Navbar';
 import AllCampuses from './AllCampuses';
 import AllStudents from './AllStudents';
+import SingleCampus from './SingleCampus';
+import SingleStudent from './SingleStudent';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import store from '../store';
 
@@ -26,9 +28,10 @@ export default class Main extends Component {
           </div>
           <Navbar />
           <Switch>
+            <Route exact path="/campuses" component={AllCampuses} />
             <Route exact path="/students" component={AllStudents} />
-            <Route path="/" component={AllCampuses} />
-
+            <Route path="/campuses/:campusId" component={SingleCampus} />
+            <Route path="students/:studentId" component={SingleStudent} />
           </Switch>
         </div>
       </Router>

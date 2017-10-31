@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import AllCampuses from './AllCampuses';
+import AllStudents from './AllStudents';
 
 export default class Navbar extends Component {
 
@@ -8,8 +11,9 @@ export default class Navbar extends Component {
       <nav className="navigation">
         <div className="nav-links-container">
 
-          <Link to="/" className="nav-link">
-            <h3>Home</h3>
+
+          <Link to="/campuses" className="nav-link">
+            <h3>Campuses</h3>
           </Link>
 
           <Link to="/students" className="nav-link">

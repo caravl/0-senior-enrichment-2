@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchCampuses } from '../actions/campusActions';
 import store from '../store';
+import campusReducer from '../reducers/campusReducer';
 
 export default class AllCampuses extends Component {
 

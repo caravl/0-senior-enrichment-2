@@ -3,7 +3,6 @@ const { Campus, Student } = require('../db/models');
 
 module.exports = api;
 
-// view all students from home
 // GET api/students
 api.get('/', function (req, res, next) {
   Student.findAll()
@@ -11,7 +10,6 @@ api.get('/', function (req, res, next) {
     .catch(next);
 })
 
-// view a single student from students
 // GET api/students/:studentId
 api.get('/:studentId', function (req, res, next) {
   const studentId = req.params.studentId;
@@ -36,7 +34,6 @@ api.put('/:studentId', function (req, res, next) {
     .catch(next);
 })
 
-// delete a student
 // DELETE api/students/:studentId
 api.delete('/:studentId', function (req, res, next) {
   const studentId = req.paras.studentId;
